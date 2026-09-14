@@ -2,103 +2,66 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#f7f8fc;
-    color:#222;
+    background:#f4f4f4;
+    color:#333;
 }
 
 .container{
-    width:90%;
-    max-width:1100px;
-    margin:auto;
+    width:80%;
+    max-width:900px;
+    margin:60px auto;
 }
 
-.hero{
+h1{
     text-align:center;
-    padding:70px 20px 50px;
-}
-
-.subheading{
-    color:#b42323;
-    font-weight:600;
-    letter-spacing:1px;
-    text-transform:uppercase;
+    color:#8B0000;
     margin-bottom:10px;
 }
 
-.hero h1{
-    font-size:42px;
-    margin-bottom:15px;
-}
-
-.description{
-    color:#666;
-    max-width:600px;
-    margin:auto;
-    line-height:1.6;
-}
-
-.assignments{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:25px;
-    padding-bottom:60px;
-}
-
-.card{
-    background:white;
-    text-decoration:none;
-    color:#222;
-    padding:30px;
-    border-radius:14px;
-    border:1px solid #ececec;
-    transition:.25s;
-    display:block;
-}
-
-.card:hover{
-    transform:translateY(-6px);
-    border-color:#b42323;
-    box-shadow:0 12px 25px rgba(0,0,0,.08);
-}
-
-.number{
-    display:inline-block;
-    background:#b42323;
-    color:white;
-    width:46px;
-    height:46px;
-    border-radius:50%;
+.subtitle{
     text-align:center;
-    line-height:46px;
-    font-weight:600;
-    margin-bottom:18px;
-}
-
-.card h2{
-    font-size:22px;
-    margin-bottom:8px;
-}
-
-.card p{
     color:#666;
-    font-size:14px;
+    margin-bottom:30px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#8B0000;
+    color:white;
+    padding:14px;
+}
+
+td{
+    padding:14px;
+    border:1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background:#fafafa;
+}
+
+tr:hover{
+    background:#f8eaea;
+}
+
+a{
+    text-decoration:none;
+    color:#8B0000;
+    font-weight:bold;
 }
 
 footer{
     text-align:center;
-    padding:25px 0 35px;
-    color:#777;
-    border-top:1px solid #e5e5e5;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-    font-size:32px;
-}
-
+    margin-top:25px;
+    color:#666;
+    font-size:14px;
 }

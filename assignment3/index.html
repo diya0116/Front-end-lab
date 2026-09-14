@@ -54,29 +54,44 @@
 
         /* Main Homepage Section */
         main {
-            /* min-height: 500px; */
+            padding: 0;
+            background: #e8d8c3;
+        }
+
+        .hero {
             text-align: center;
-            padding: 100px 20px;
-            background-color: #e8d8c3;
+            padding: 60px 20px;
         }
 
-        h1 {
-            font-size: 50px;
-            margin-bottom: 10px;
+        .hero h1 {
+            font-size: 56px;
             color: #4b2e2e;
-            font-family: "Cherry Cream Soda", system-ui;
+            margin-bottom: 10px;
+            font-family: "Cherry Cream Soda", cursive;
         }
 
-        h2 {
-            font-size: 25px;
-            margin-bottom: 30px;
+        .hero h2 {
+            color: #6b4b4b;
+            margin-bottom: 20px;
         }
 
-        p {
-            font-size: 18px;
+        .hero p {
             max-width: 700px;
-            margin: auto;
-            line-height: 1.6;
+            margin: 0 auto 25px;
+        }
+
+        .video-box {
+            width: 80%;
+            max-width: 900px;
+            margin: 40px auto 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .video-box video {
+            width: 100%;
+            display: block;
         }
 
         .register-button {
@@ -92,53 +107,6 @@
         .register-button:hover {
             background-color: #2f1b1b;
         }
-
-        /* Background Video */
-        .hero {
-            position: relative;
-            min-height: 1000px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .background-video {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            top: 0;
-            left: 0;
-            z-index: 0;
-        }
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.45);
-            z-index: 1;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            color: white;
-            padding: 30px;
-        }
-
-        .hero-content h1 {
-            color: white;
-        }
-
-        .hero-content p {
-            color: white;
-        }
-
 
         /* Footer */
         footer {
@@ -171,30 +139,23 @@
 
         <section class="hero">
 
-            <!-- Background Video -->
-            <video class="background-video" autoplay muted loop playsinline>
-                <source src="media/fest-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <h1>Campus Fest 2026</h1>
 
+            <h2>15 - 17 October 2026</h2>
 
-            <!-- Content on top of video -->
-            <div class="hero-content">
+            <p>
+                Join us for three days of music, dance, sports, coding,
+                fashion shows and unforgettable campus memories.
+            </p>
 
-                <h1>Campus Fest 2026</h1>
+            <a href="register.html" class="register-button">Register Now</a>
 
-                <h2>15th - 17th October 2026</h2>
-
-                <p>
-                    Campus Fest 2026 is a college event where students can participate
-                    in exciting competitions, showcase their talents, meet new people,
-                    and enjoy three days of fun and entertainment.
-                </p>
-
-                <a href="register.html" class="register-button">
-                    Register Now
-                </a>
-
+            <!-- Aftermovie -->
+            <div class="video-box">
+                <video controls autoplay muted loop>
+                    <source src="media/fest-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
         </section>

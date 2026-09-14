@@ -72,3 +72,125 @@ nav a {
 }
     
  */
+
+ /* Common Page */
+
+.page-content{
+    width: 80%;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.page-content h1,
+.page-content h2{
+    margin-bottom: 15px;
+}
+
+.page-content p{
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Table */
+
+.package-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+.package-table th,
+.package-table td{
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: center;
+}
+
+.package-table th{
+    background: #1e4d6b;
+    color: white;
+}
+
+/* Lists */
+
+.travel-list{
+    margin-left: 20px;
+}
+
+.travel-list li{
+    margin: 10px 0;
+}
+
+/* Social Links */
+
+.social-links a{
+    text-decoration: none;
+    color: #1e4d6b;
+    font-weight: bold;
+}
+
+.social-links a:hover{
+    text-decoration: underline;
+}
+
+/* Background full screen */
+body{
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("media/home-page-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.form-box{
+    width: 600px;
+    background: rgba(255,255,255,0.92);
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+.form-box h1,
+.form-box p{
+    text-align: center;
+}
+
+.form-row{
+    display: flex;
+    align-items: center;
+    margin: 14px 0;
+}
+
+.form-row label{
+    width: 140px;
+    font-weight: bold;
+}
+
+.form-row input,
+.form-row select{
+    flex: 1;
+    padding: 9px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+.form-box input[type="submit"]{
+    width: 100%;
+    margin-top: 18px;
+    padding: 10px;
+    background: #1e4d6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

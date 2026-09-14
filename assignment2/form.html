@@ -4,52 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Form</title>
+    <title>Booking Form</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
 
-    <h2>
-        Travel Form
-    </h2>
-    <p>
-        Please fill out the form below to book your travel package. We will get back to you with the details and 
-        confirmation of your booking. Make sure to provide accurate information so we can assist you better.
-    </p>
+    <nav>
+        <h2>Tours and Travels</h2>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="tour-packages.html">Tour Packages</a>
+            <a href="form.html">Booking Form</a>
+            <a href="about-us.html">About Us</a>
+        </div>
+    </nav>
 
-    <form>
+    <section class="form-section">
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <div class="form-box">
+            <h1>Book Your Trip</h1>
+            <p>Fill in your details and we'll contact you shortly.</p>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+            <form>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required><br><br>
+                <div class="form-row">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
 
-        <label for="destination">Destination:</label>
-        <select id="destination" name="destination" required>
-            <option value="">Select a destination</option>
-            <option value="paris">Paris</option>
-            <option value="new-york">New York</option>
-            <option value="tokyo">Tokyo</option>
-            <option value="sydney">Sydney</option>
-        </select><br><br>
+                <div class="form-row">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter email" required>
+                </div>
 
-        <label for="travel-date">Travel Date:</label>
-        <input type="date" id="travel-date" name="travel-date" required><br><br>
+                <div class="form-row">
+                    <label>Phone</label>
+                    <input type="tel" placeholder="9876543210" required>
+                </div>
 
-        <input type="submit" value="Submit">
+                <div class="form-row">
+                    <label for="destination">Destination</label>
+                    <select id="destination" required>
+                        <option>Select Destination</option>
+                        <option>Paris</option>
+                        <option>Dubai</option>
+                        <option>Tokyo</option>
+                        <option>Switzerland</option>
+                    </select>
+                </div>
 
+                <div class="form-row">
+                    <label for="package">Package</label>
+                    <select id="package" required>
+                        <option>Choose Package</option>
+                        <option>Silver</option>
+                        <option>Gold</option>
+                        <option>Platinum</option>
+                    </select>
+                </div>
 
-    </form>
-    
+                <div class="form-row">
+                    <label for="travel-date">Travel Date</label>
+                    <input id="travel-date" type="date" title="Select your travel date" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="return-date">Return Date</label>
+                    <input id="return-date" type="date" title="Select your return date" required>
+                </div>
+
+                <input type="submit" value="Book Now">
+
+            </form>
+        </div>
+
+    </section>
+
 </body>
+
 </html>
