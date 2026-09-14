@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Campus Fest 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+        /* Basic Styling */
+        body {
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            background-color: #f5f5f5;
+            color: #222222;
+        }
+
+
+        /* Navigation Bar */
+        header {
+            background-color: #4b2e2e;
+            padding: 15px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* Main Content */
+        main {
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4b2e2e;
+            font-size: 40px;
+            font-family: "Cherry Cream Soda", system-ui;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: 30px auto;
+            background-color: #e8d8c3;
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #4b2e2e;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+
+        /* Radio and Checkbox */
+        .choice {
+            margin-top: 10px;
+        }
+
+        .choice label {
+            font-weight: normal;
+            margin-right: 15px;
+        }
+
+
+        /* Buttons */
+        .buttons {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #4b2e2e;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2f1b1b;
+        }
+
+
+        /* Footer */
+        footer {
+            background-color: #4b2e2e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="results.html">Results</a>
+            <a href="register.html">Register</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <h1>Participant Registration</h1>
+
+        <section class="form-container">
+
+            <form>
+
+                <!-- 1. Text Input -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+
+                <!-- 2. Email Input -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+
+                <!-- 3. Phone Input -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+
+                <!-- 4. Date Input -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+
+                <!-- 5. Number Input -->
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="16" max="30" required>
+
+
+                <!-- 6. Select Dropdown -->
+                <label for="college">College:</label>
+                <select id="college" name="college" required>
+                    <option value="">Select your college</option>
+                    <option value="thapar">Thapar Institute</option>
+                    <option value="chitkara">Chitkara University</option>
+                    <option value="other">Other</option>
+                </select>
+
+
+                <!-- 7. Event Selection -->
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="">Choose an event</option>
+                    <option value="singing">Solo Singing</option>
+                    <option value="dance">Group Dance</option>
+                    <option value="hackathon">Hackathon</option>
+                    <option value="coding">Code Sprint</option>
+                    <option value="basketball">Basketball</option>
+                </select>
+
+
+                <!-- 8. Radio Buttons -->
+                <label>Participation Type:</label>
+
+                <div class="choice">
+                    <input type="radio" id="individual"
+                           name="participation" value="individual" required>
+
+                    <label for="individual">Individual</label>
+
+
+                    <input type="radio" id="team"
+                           name="participation" value="team">
+
+                    <label for="team">Team</label>
+                </div>
+
+
+                <!-- 9. Textarea -->
+                <label for="team-name">Team Name (if applicable):</label>
+
+                <textarea id="team-name"
+                          name="team-name"
+                          rows="4"
+                          placeholder="Enter your team name"></textarea>
+
+
+                <!-- 10. Checkbox -->
+                <div class="choice">
+
+                    <input type="checkbox"
+                           id="terms"
+                           name="terms"
+                           required>
+
+                    <label for="terms">
+                        I agree to the event rules and regulations.
+                    </label>
+
+                </div>
+
+
+                <!-- Submit and Reset Buttons -->
+                <div class="buttons">
+
+                    <button type="submit">
+                        Submit Registration
+                    </button>
+
+                    <button type="reset">
+                        Reset Form
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Campus Fest. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

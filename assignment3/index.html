@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <title>Campus Fest 2026</title>
+
+    <style>
+        /* Basic styling for the whole page */
+        body {
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            background-color: #f5f5f5;
+            color: #222222;
+        }
+
+
+        /* Navigation Bar */
+        header {
+            background-color: #4b2e2e;
+            padding: 15px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* Main Homepage Section */
+        main {
+            /* min-height: 500px; */
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #e8d8c3;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+            color: #4b2e2e;
+            font-family: "Cherry Cream Soda", system-ui;
+        }
+
+        h2 {
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .register-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #4b2e2e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .register-button:hover {
+            background-color: #2f1b1b;
+        }
+
+        /* Background Video */
+        .hero {
+            position: relative;
+            min-height: 1000px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .background-video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.45);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero-content h1 {
+            color: white;
+        }
+
+        .hero-content p {
+            color: white;
+        }
+
+
+        /* Footer */
+        footer {
+            background-color: #4b2e2e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="results.html">Results</a>
+            <a href="register.html">Register</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <!-- Background Video -->
+            <video class="background-video" autoplay muted loop playsinline>
+                <source src="media/fest-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+
+            <!-- Content on top of video -->
+            <div class="hero-content">
+
+                <h1>Campus Fest 2026</h1>
+
+                <h2>15th - 17th October 2026</h2>
+
+                <p>
+                    Campus Fest 2026 is a college event where students can participate
+                    in exciting competitions, showcase their talents, meet new people,
+                    and enjoy three days of fun and entertainment.
+                </p>
+
+                <a href="register.html" class="register-button">
+                    Register Now
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Main Content -->
+    <!-- <main>
+
+        <section>
+            <h1>Campus Fest 2026</h1>
+
+            <h2>15th - 17th October 2026</h2>
+
+            <p>
+                Campus Fest 2026 is a college event where students can participate
+                in exciting competitions, showcase their talents, meet new people,
+                and enjoy three days of fun and entertainment.
+            </p>
+
+            <a href="register.html" class="register-button">
+                Register Now
+            </a>
+        </section>
+
+    </main> -->
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Campus Fest. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
